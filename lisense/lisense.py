@@ -1,0 +1,27 @@
+"""Lisense - Sensible repository licensing for Humans
+
+Usage:
+  lisense list
+  lisense setup
+  lisense new [<license>]
+  lisense guide <license>
+  lisense -h | --help
+  lisense --version
+
+Options:
+  -h --help     Show help message.
+  --version     Show version.
+"""
+
+
+from docopt import docopt
+from parser.parser import ArgumentParser
+
+
+def main():
+    arguments = docopt(__doc__, version="0.0.1")
+    parser = ArgumentParser(arguments)
+    parser.action()
+
+if __name__ == "__main__":
+    main()
