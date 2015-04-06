@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 """
 lisense.parser.parser
 
@@ -14,16 +13,15 @@ from ..commands.guide import generate_guide
 
 
 class ArgumentParser:
+    def __init__(self, args):
+        self.args = args
 
-  def __init__(self, args):
-    self.args = args
-
-  def action(self):
-    if self.args['list']:
-      generate_list()
-    elif self.args['new']:
-      create_license(self.args['<license>'], self.args['--owner'])
-    elif self.args['setup']:
-      setup_lisense()
-    elif self.args['guide']:
-      generate_guide(self.args['<license>'])
+    def action(self):
+        if self.args['list']:
+            generate_list()
+        elif self.args['new']:
+            create_license(self.args['<license>'], self.args['--owner'])
+        elif self.args['setup']:
+            setup_lisense()
+        elif self.args['guide']:
+            generate_guide(self.args['<license>'])
