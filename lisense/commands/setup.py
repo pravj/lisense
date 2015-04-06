@@ -14,6 +14,9 @@ from ..config.configer import Configer
 
 
 def setup_lisense():
+    """ Configure global lisense settings by asking user about the defaults.
+    """
+
     print colorize(
         "This utility will configure Lisense globally on your system.",
         ansi=4)
@@ -44,6 +47,8 @@ def setup_lisense():
 
 
 def set_config(license, owner):
-    configer = Configer(True)
+    """ Set default template context variables in the global configuration.
+    """
 
+    configer = Configer(True)
     configer.dump([['license', catalogue[license.lower()]], ['owner', owner]])

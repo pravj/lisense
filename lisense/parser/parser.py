@@ -17,6 +17,9 @@ class ArgumentParser:
         self.args = args
 
     def action(self):
+        """ Act according to the supplied command-line flags
+        """
+
         if self.args['list']:
             generate_list()
         elif self.args['new']:

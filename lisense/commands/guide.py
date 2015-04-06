@@ -12,6 +12,10 @@ from yaml import load
 
 
 def generate_guide(license):
+    """ Checks availability of a particular license and proceed
+    ahead accordingly. Alerts user about absense of the license.
+    """
+
     if check_license(license.lower()):
         metadata_path = join(dirname(__file__), "../data/metadata/%s" %
                              (license.lower()))
@@ -28,6 +32,10 @@ def generate_guide(license):
 
 
 def show_guide(metadata):
+    """ Iterate through all the sections in metadata file of the license.
+    Show colored attributes about any particular license
+    """
+
     print colorize("%s" % (metadata['title']), ansi=4)
     print colorize("=" * len(metadata['title']), ansi=4)
 

@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+# listing of all the license labels
 catalogue = {
     "gpl-2.0": "GPL-2.0",
     "mit": "MIT",

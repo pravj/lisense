@@ -21,9 +21,15 @@ class Configer:
             self.initialize()
 
     def initialize(self):
+        """ Intialize sections in the configuration file.
+        """
+
         self.config.add_section(self.section)
 
     def dump(self, pairs):
+        """ Set a list of key/value pairs to the configuration file.
+        """
+
         for pair in pairs:
             self.config.set(self.section, pair[0], pair[1])
 
@@ -31,6 +37,9 @@ class Configer:
             self.config.write(f)
 
     def load(self, key):
+        """ Get a key's value from the configuration file.
+        """
+
         self.config.read(self.lisense_config)
 
         try:

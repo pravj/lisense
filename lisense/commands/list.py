@@ -10,6 +10,9 @@ from ..data.index import catalogue
 
 
 def generate_list():
+    """ Prints listing of all the available licenses.
+    """
+
     print colorize("Lisense currently supports %d licenses.\n" %
                    (len(catalogue)),
                    ansi=4)
@@ -19,6 +22,9 @@ def generate_list():
 
 
 def check_license(license):
+    """ Checks whether a given license is available or not.
+    """
+
     if license in catalogue.keys():
         return True
     return False

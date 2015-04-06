@@ -16,12 +16,20 @@ from jinja2 import Environment, Template, meta
 
 
 def parse_template(template):
+    """ Parses the abstract syntax tree of a template
+    and returns a set of all context variables in the template.
+    """
+
     env = Environment()
     ast = env.parse(template)
     return meta.find_undeclared_variables(ast)
 
 
 def create_license(license, owner):
+    """ In the process of generating a license, validates user inputs
+    about license name otherwise uses default values from global configuration.
+    """
+
     configer = Configer()
 
     if license is not None:
@@ -51,6 +59,10 @@ def create_license(license, owner):
 
 
 def generate_license(license, owner):
+    """ In the process of generating a license, validates the owner name arguments
+    otherwise uses default values from global configuration.
+    """
+
     configer = Configer()
 
     if owner is None:
@@ -73,6 +85,10 @@ def generate_license(license, owner):
 
 
 def generate_license_file(license, owner):
+    """ Generates a license file and populate it accordingly.
+    Asks user for extra context variables if any in the license. 
+    """
+
     template_file_path = join(dirname(__file__), "../data/template/%s" %
                               (license))
     template_file = abspath(template_file_path)
