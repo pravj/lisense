@@ -19,7 +19,7 @@ setup(
     package_data = {
       'lisense': ['data/template/*', 'data/metadata/*']
     },
-    install_requires=['docopt', 'jinja2', 'requests', 'xtermcolor'],
+    install_requires=['docopt', 'jinja2', 'xtermcolor'],
     long_description=read('README.rst'),
     entry_points={
         'console_scripts': ['lisense = lisense.lisense:main']

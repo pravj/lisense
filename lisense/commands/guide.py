@@ -28,7 +28,8 @@ def generate_guide(license):
     else:
         print colorize("No such license named %s." % (license), ansi=4)
         print colorize(
-            "Use command 'lisense list' to see all available licenses.")
+            "Use command 'lisense list' to see all available licenses."
+            , ansi=4)
 
 
 def show_guide(metadata):

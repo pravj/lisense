@@ -13,7 +13,7 @@ catalogue = {
     "epl-1.0": "EPL-1.0",
     "gpl-3.0": "GPL-3.0",
     "isc": "ISC",
-    "lgpl-2.0": "LGPL-2.0",
+    "lgpl-2.1": "LGPL-2.1",
     "lgpl-3.0": "LGPL-3.0",
     "mpl-2.0": "MPL-2.0",
     "no-license": "No-license",

@@ -1,4 +1,3 @@
 docopt
 jinja2
-requests
 xtermcolor
