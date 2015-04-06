@@ -13,7 +13,13 @@ from datetime import datetime
 from .list import check_license
 from ..data.index import catalogue
 from ..config.configer import Configer
-from jinja2 import Template
+from jinja2 import Environment, Template, meta
+
+
+def parse_template(template):
+  env = Environment()
+  ast = env.parse(template)
+  return meta.find_undeclared_variables(ast)
 
 
 def create_license(license, owner):
@@ -49,12 +55,30 @@ def generate_license(license, owner):
   else:
     print colorize("Using \"%s\" as the owner for license.." % (owner), ansi=46)
 
+  generate_license_file(license, owner)
 
+
+def generate_license_file(license, owner):
   template_file_path = join(dirname(__file__), "../data/template/%s" % (license))
   template_file = abspath(template_file_path)
 
   with open(template_file) as f:
     content = f.read()
 
+  parsed_context = parse_template(content)
+  default_context_keys = ['owner', 'year']
+
+  context = {'year': datetime.now().year, 'owner': owner}
+  extra_context = {}
+
+  if (len(parsed_context) > len(default_context_keys)):
+    for key in parsed_context:
+      if key not in default_context_keys:
+        print colorize("\n%s license also asks for %s. What do you want to fill there?" % (license, key), ansi=4)
+        extra_context[key] = raw_input().strip()
+
+  arguments = context.copy()
+  arguments.update(extra_context)
+
   template = Template(content)
-  print template.render(year=datetime.now().year, owner=owner)
+  print template.render(arguments)
