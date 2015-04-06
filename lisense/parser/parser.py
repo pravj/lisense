@@ -8,6 +8,8 @@ This module parses command-line arguments and act accordingly.
 
 from ..data.index import catalogue
 from ..commands.list import generate_list
+from ..commands.new import generate_license
+from ..commands.setup import setup_lisense
 
 class ArgumentParser:
 
@@ -18,9 +20,8 @@ class ArgumentParser:
     if self.args['list']:
       generate_list()
     elif self.args['new']:
-      print self.args['<license>']
-      print "create new license"
+      generate_license(self.args['<license>'])
     elif self.args['setup']:
-      print "setup configuration"
+      setup_lisense()
     elif self.args['guide']:
       print "guide about %s license" % (self.args['<license>'])
