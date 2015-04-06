@@ -1,0 +1,15 @@
+---
+title: Creative Commons Zero v1.0 Universal
+label: cc0-1.0
+source: http://creativecommons.org/publicdomain/zero/1.0/
+
+description: The Creative Commons CC0 Public Domain Dedication waives copyright interest in any a work you've created and dedicates it to the world-wide public domain. Use CC0 to opt out of copyright entirely and ensure your work has the widest reach. As with the Unlicense and typical software licenses, CC0 disclaims warranties. CC0 is very similar to the Unlicense.
+
+permitted:
+  - commercial-use
+  - modifications
+  - distribution
+  - private-use
+
+forbidden:
+  - no-liability

@@ -1,0 +1,20 @@
+---
+title: BSD 3-clause "New" or "Revised" License
+label: bsd-3-clause
+source: http://opensource.org/licenses/BSD-3-Clause
+
+description: A permissive license that comes in two variants, the "BSD 2-Clause" and "BSD 3-Clause". Both have very minute differences to the MIT license. The three clause variant prohibits others from using the name of the project or its contributors to promote derivative works without written consent.
+
+required:
+  - include-copyright
+
+permitted:
+  - commercial-use
+  - modifications
+  - distribution
+  - sublicense
+  - private-use
+
+forbidden:
+  - no-liability
+  - trademark-use

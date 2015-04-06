@@ -1,0 +1,21 @@
+---
+title: Eclipse Public License 1.0
+label: epl-1.0
+source: http://www.eclipse.org/legal/epl-v10.html
+
+description: This commercially-friendly copyleft license provides the ability to commercially license binaries; a modern royalty-free patent license grant; and the ability for linked works to use other licenses, including commercial ones.
+
+required:
+  - disclose-source
+  - include-copyright
+
+permitted:
+  - commercial-use
+  - distribution
+  - modifications
+  - sublicense
+  - patent-grant
+  - private-use
+
+forbidden:
+  - no-liability

@@ -1,0 +1,19 @@
+---
+title: BSD 2-clause "Simplified" License
+label: bsd-2-clause
+source: http://opensource.org/licenses/BSD-2-Clause
+
+description: A permissive license that comes in two variants, the "BSD 2-Clause" and "BSD 3-Clause". Both have very minute differences to the MIT license.
+
+required:
+  - include-copyright
+
+permitted:
+  - commercial-use
+  - modifications
+  - distribution
+  - sublicense
+  - private-use
+
+forbidden:
+  - no-liability

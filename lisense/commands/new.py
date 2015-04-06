@@ -81,4 +81,6 @@ def generate_license_file(license, owner):
   arguments.update(extra_context)
 
   template = Template(content)
-  print template.render(arguments)
+  content = template.render(arguments)
+  with open('LICENSE', 'w') as f:
+    f.write(content)
