@@ -12,6 +12,7 @@ from ..commands.new import create_license
 from ..commands.setup import setup_lisense
 from ..commands.guide import generate_guide
 
+
 class ArgumentParser:
 
   def __init__(self, args):
@@ -21,7 +22,7 @@ class ArgumentParser:
     if self.args['list']:
       generate_list()
     elif self.args['new']:
-      create_license(self.args['<license>'])
+      create_license(self.args['<license>'], self.args['--owner'])
     elif self.args['setup']:
       setup_lisense()
     elif self.args['guide']:

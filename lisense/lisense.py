@@ -3,14 +3,15 @@
 Usage:
   lisense list
   lisense setup
-  lisense new [<license>]
+  lisense new [<license>] [--owner=name]
   lisense guide <license>
   lisense -h | --help
   lisense --version
 
 Options:
-  -h --help     Show help message.
-  --version     Show version.
+  -h --help       Show help message.
+  --version       Show version.
+  --owner=name    Owner for the license.
 """
 
 

@@ -11,12 +11,10 @@ from ..data.index import catalogue
 
 
 def generate_list():
-  print colorize("Lisense currently supports %d licenses\n" % (len(catalogue)), ansi=4)
+  print colorize("Lisense currently supports %d licenses.\n" % (len(catalogue)), ansi=4)
 
-  index = 1
   for label, license in catalogue.iteritems():
-    print "%d. %s" % (index, license)
-    index += 1
+    print colorize("- %s" % (license), ansi=253)
 
 
 def check_license(license):
