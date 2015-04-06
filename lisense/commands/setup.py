@@ -10,7 +10,8 @@ from xtermcolor import colorize
 from os.path import expanduser, join
 from sys import exit
 from .list import check_license, generate_list
-import ConfigParser
+from ..data.index import catalogue
+from ..config.configer import Configer
 
 
 def setup_lisense():
@@ -33,14 +34,6 @@ def setup_lisense():
 
 
 def set_config(license, owner):
-  config = ConfigParser.RawConfigParser()
+  configer = Configer(True)
 
-  config.add_section('Defaults')
-  config.set('Defaults', 'license', license)
-  config.set('Defaults', 'owner', owner)
-
-  home_dir = expanduser('~')
-  lisense_config = join(home_dir, '.lisense')
-
-  with open(lisense_config, 'wb') as config_file:
-    config.write(config_file)
+  configer.dump([['license', catalogue[license.lower()]], ['owner', owner]])
