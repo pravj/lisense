@@ -89,7 +89,7 @@ def generate_license_file(license, owner):
     Asks user for extra context variables if any in the license. 
     """
 
-    template_file_path = join(dirname(__file__), "../data/template/%s" %
+    template_file_path = join(dirname(__file__), "../data/template/%s.tmpl" %
                               (license))
     template_file = abspath(template_file_path)
 
