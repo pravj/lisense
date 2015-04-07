@@ -8,7 +8,7 @@ def read(filename):
 
 setup(
     name='lisense',
-    version='0.0.1',
+    version='1.0.0',
     author='Pravendra Singh',
     author_email='hackpravj@gmail.com',
     description=('Sensible repository licensing for Humans'),
