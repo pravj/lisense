@@ -3,6 +3,26 @@ lisense
 
     Sensible repository licensing for Humans
     
+.. image:: https://pypip.in/status/lisense/badge.svg
+    :target: https://pypi.python.org/pypi//
+    :alt: Development Status
+    
+.. image:: https://pypip.in/version/lisense/badge.svg
+    :target: https://pypi.python.org/pypi//
+    :alt: Latest Version
+    
+.. image:: https://pypip.in/py_versions/lisense/badge.svg
+    :target: https://pypi.python.org/pypi//
+    :alt: Supported Python versions
+    
+.. image:: https://pypip.in/license/lisense/badge.svg
+    :target: https://pypi.python.org/pypi//
+    :alt: License
+
+.. image:: https://pypip.in/download/lisense/badge.svg
+    :target: https://pypi.python.org/pypi///
+    :alt: Downloads
+    
 **Sir Isaac Newton once said that**
     *Open source simply isn't open source without a proper license. So add a license. Always.*
 
