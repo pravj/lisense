@@ -36,6 +36,9 @@ lisense in action
 .. figure:: https://raw.githubusercontent.com/pravj/lisense/master/docs/lisense.gif
    :alt: lisense
 
+Installation
+~~~~~~~~~~~~
+    pip install lisense
 
 lisense. What?
 ~~~~~~~~~~~~~~
