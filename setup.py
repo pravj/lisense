@@ -23,5 +23,16 @@ setup(
     long_description=read('README.rst'),
     entry_points={
         'console_scripts': ['lisense = lisense.lisense:main']
-    }
+    },
+    classifiers = [
+      'Development Status :: 5 - Production/Stable',
+      'Environment :: Console',
+      'Operating System :: OS Independent',
+      'Intended Audience :: Developers',
+      'License :: OSI Approved :: MIT License',
+      'Natural Language :: English',
+      'Programming Language :: Python :: 2.6',
+      'Programming Language :: Python :: 2.7',
+      'Topic :: Software Development :: Version Control'
+    ]
 )
