@@ -1,3 +1,6 @@
+[v1.1.0] - 2015-04-07
+- Fix PyYAML import error issue
+
 [v1.0.0] - 2015-04-07
 
 - Initial Release

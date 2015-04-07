@@ -20,7 +20,7 @@ from parser.parser import ArgumentParser
 
 
 def main():
-    arguments = docopt(__doc__, version="1.0.0")
+    arguments = docopt(__doc__, version="1.1.0")
     parser = ArgumentParser(arguments)
     parser.action()
 

@@ -8,7 +8,7 @@ def read(filename):
 
 setup(
     name='lisense',
-    version='1.0.0',
+    version='1.1.0',
     author='Pravendra Singh',
     author_email='hackpravj@gmail.com',
     description=('Sensible repository licensing for Humans'),
@@ -19,7 +19,7 @@ setup(
     package_data = {
       'lisense': ['data/template/*', 'data/metadata/*']
     },
-    install_requires=['docopt', 'jinja2', 'xtermcolor'],
+    install_requires=['docopt', 'jinja2', 'pyyaml', 'xtermcolor'],
     long_description=read('README.rst'),
     entry_points={
         'console_scripts': ['lisense = lisense.lisense:main']
