@@ -3,24 +3,20 @@ lisense
 
     Sensible repository licensing for Humans
     
-.. image:: https://pypip.in/status/lisense/badge.svg
-    :target: https://pypi.python.org/pypi//
-    :alt: Development Status
-    
-.. image:: https://pypip.in/version/lisense/badge.svg
-    :target: https://pypi.python.org/pypi//
+.. image:: https://img.shields.io/pypi/v/lisense.svg?style=flat-square
+    :target: https://pypi.python.org/pypi/lisense/
     :alt: Latest Version
     
-.. image:: https://pypip.in/py_versions/lisense/badge.svg
-    :target: https://pypi.python.org/pypi//
+.. image:: https://img.shields.io/badge/Python-2.6%2C%202.7-brightgreen.svg?style=flat-square
+    :target: https://pypi.python.org/pypi/lisense/
     :alt: Supported Python versions
     
-.. image:: https://pypip.in/license/lisense/badge.svg
-    :target: https://pypi.python.org/pypi//
+.. image:: https://img.shields.io/pypi/l/lisense.svg?style=flat-square
+    :target: https://pypi.python.org/pypi/lisense/
     :alt: License
 
-.. image:: https://pypip.in/download/lisense/badge.svg
-    :target: https://pypi.python.org/pypi///
+.. image:: https://img.shields.io/pypi/dm/lisense.svg?style=flat-square
+    :target: https://pypi.python.org/pypi/lisense/
     :alt: Downloads
     
 **Sir Isaac Newton once said that**
